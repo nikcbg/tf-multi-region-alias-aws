@@ -1,9 +1,9 @@
-# Default provider configuration for us east coast region
+# Default provider configuration for US East coast region
 provider "aws" {
   region     = "us-east-1"
 }
 
-# Additional provider configuration for us west coast region
+# Additional provider configuration for US West coast region
 provider "aws" {
   alias      = "west"
   region     = "us-west-2"
@@ -26,3 +26,4 @@ output "public_dns_east1" {
 
 output "public_dns_west2" {
 value = aws_instance.west2.public_dns
+}  
