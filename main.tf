@@ -1,9 +1,9 @@
-# Default provider configuration for US East coast region
+# Default provider configuration for US East region
 provider "aws" {
   region     = "us-east-1"
 }
 
-# Additional provider configuration for US West coast region
+# Additional provider configuration for US West region
 provider "aws" {
   alias      = "west"
   region     = "us-west-2"
